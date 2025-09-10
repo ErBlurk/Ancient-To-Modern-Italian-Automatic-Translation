@@ -10,6 +10,12 @@
 
 ---
 
+[Original repository here](https://github.com/giankev/Ancient-to-Modern-Italian-Automatic-Translation.git)
+
+[Detailed project report here (PDF)](report.pdf)
+
+---
+
 ## Overview
 
 This project arises from the need to benchmark large language models and to test how well they can be used as automatic judges. There is no single established metric for evaluating LLMs on niche tasks like ancient to modern language conversion, so we compare human annotation and LLM-based evaluation side by side. At the same time we show that LLMs can be strong translators, in some cases producing outputs comparable to human experts, while still posing challenges for reliable automatic evaluation.
@@ -60,5 +66,6 @@ We then measure agreement between human and automatic evaluations.
 See `notebooks` in various folders for step by step code and exact prompts.
 
 OpusMT pivot was run on an NVIDIA GeForce 1660 Ti Mobile (6 GB VRAM), batch size 8.
+
 
 Minerva fine tuning used an RTX 4070 Ti Super (16 GB VRAM), float16, batch size 4, 3 epochs.
